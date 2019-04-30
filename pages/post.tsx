@@ -8,7 +8,7 @@ export default class extends React.Component<any>{
     }
 
     public render(){
-        return <div>hola post!! x2 {this.props.slug}</div>
+        return <p>holamundo {this.props.slug}</p>
     }
     
 }

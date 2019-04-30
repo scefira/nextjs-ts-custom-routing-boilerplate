@@ -15,7 +15,6 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
     "typeRoots": [
       "./node_modules/@types"
     ],
@@ -24,7 +23,7 @@
       "es2015",
       "es2016"
     ],
-    "outDir": ".next"
+    "outDir": ".next",
   },
   "exclude": [".next", "server/**/*.*"]
 }

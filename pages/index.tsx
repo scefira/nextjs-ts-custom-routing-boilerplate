@@ -1,9 +1,10 @@
 import React from 'react'
-import Link from 'next/link'
+import routes, { Link } from "../server/routes";
 
 export default () => (
   <ul>
-    <li><Link href='/post/hola-esto-es-una-prueba'><a>publicacion holamundo</a></Link></li>
-    <li><Link href='//post'><a>Oficial</a></Link></li>
+    <li><Link route='post' params={{slug:"hola-mundo-cruel"}}><a>publicacion holamundo</a></Link></li>
+    <li><Link route='post'  params={{slug:"hola-mundo-cruel-x2"}} ><a>Oficial</a></Link></li>
+    <li><Link route='anidated'  params={{slug:"hola-mundo-cruel-x2"}} ><a>Anidated</a></Link></li>
   </ul>
 )
